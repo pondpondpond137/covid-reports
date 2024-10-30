@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import styles from './summaryPanel.module.css'; // Adjust your styles path
 import Papa from 'papaparse'; // Importing the PapaParse library
 import { useSession } from "next-auth/react";
-import AddData from "./insertPage/addData";
+import AddData from './insertPage/AddData'; // Correct the case
 
 function SummaryPanel() {
   const [summaryData, setSummaryData] = useState({
