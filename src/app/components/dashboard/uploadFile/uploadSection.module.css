@@ -1,0 +1,130 @@
+.container {
+    background-color: white;
+    border-radius: 8px;
+}
+
+.uploadSection {
+    margin: 10px 20px;
+}
+
+
+.items_panel {
+    margin-bottom: 20px; /* Ensure there's space between sections */
+    padding: 15px; /* Adjust padding for better spacing */
+}
+
+.uploadHeader {
+    font-size: 1.5em; /* Adjust font size for upload header */
+    color: white;
+}
+
+.parsedData {
+    background-color: #f8f8f8; /* Light background for contrast */
+    padding: 10px; /* Padding around parsed data */
+    border: 1px solid #ccc; /* Optional border for better visibility */
+    border-radius: 4px; /* Rounded corners */
+    white-space: pre-wrap; /* Preserve white space in JSON data */
+}
+
+.context {
+    margin: 5px 0; /* Add some vertical spacing for context lines */
+}
+
+.dataTable {
+    width: 100%;
+    border-collapse: collapse; /* Remove space between borders */
+    margin-top: 20px; /* Spacing above the table */
+}
+
+.dataTable th, .dataTable td {
+    border: 1px solid #ccc; /* Border for cells */
+    padding: 10px; /* Cell padding */
+    text-align: left; /* Align text to the left */
+}
+
+.dataTable th {
+    background-color: #f2f2f2; /* Header background color */
+}
+.uploadSection {
+    background-color: #3b0a45; /* Dark purple background */
+    border: 2px dashed #a77dca; /* Lighter purple for the border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Spacing inside the box */
+    text-align: center; /* Center the text */
+    margin: 20px 0; /* Margin above and below the section */
+    transition: background-color 0.3s; /* Smooth background color transition */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Box shadow for elevation */
+}
+
+.uploadSection:hover {
+    background-color: #4c1f69; /* Darker shade on hover */
+}
+
+.uploadInput {
+    margin: 10px 0; /* Margin for the file input */
+    padding: 10px; /* Padding for the input */
+    font-size: 16px; /* Font size */
+    border: 1px solid #a77dca; /* Solid border in lighter purple */
+    border-radius: 4px; /* Slightly rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    background-color: #5c2a84; /* Background color for the input */
+    color: white; /* Text color */
+}
+
+.uploadButtons {
+    display: flex; /* Flexbox for button alignment */
+    justify-content: space-between; /* Space between buttons */
+    margin-top: 15px; /* Space above buttons */
+}
+
+.cancelButton,
+.insertButton {
+    background-color: #8e44ad; /* Purple button color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Button padding */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.cancelButton:hover,
+.insertButton:hover {
+    background-color: #732d91; /* Darker shade on hover */
+}
+
+.cancelButton:disabled,
+.insertButton:disabled {
+    background-color: #ccc; /* Grey out buttons when disabled */
+    cursor: not-allowed; /* Not allowed cursor */
+}
+
+
+.loginPrompt {
+    color: #ffffff; /* White text for contrast */
+    background-color: rgba(139, 0, 139, 0.8); /* Semi-transparent dark purple for background */
+    padding: 10px 15px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #a77dca; /* Lighter purple border */
+    margin-top: 15px; /* Space above the message */
+    font-size: 16px; /* Slightly larger font */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    max-width: 300px; /* Optional: limit the width of the message */
+    text-align: center; /* Center the text */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.loginPrompt:hover {
+    background-color: rgba(139, 0, 139, 1); /* Darken the background on hover */
+}
+
+.loginLink {
+    color: #a77dca; /* Lighter purple color for the link */
+    text-decoration: underline; /* Underline for better visibility */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.loginLink:hover {
+    color: #ffffff; /* Change color on hover for emphasis */
+}

@@ -1,5 +1,6 @@
 import localFont from "next/font/local";
 import Navbar from "./components/nav/Nav";
+import { AuthProvider } from "./Providers";
 
 export const metadata = {
   title: "Newbie Website",
@@ -11,8 +12,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Navbar />
-        {children}
+        <AuthProvider>
+          <Navbar />
+          {children}
+        </AuthProvider>
       </body>
     </html>
   );

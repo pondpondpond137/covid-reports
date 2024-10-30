@@ -1,6 +1,8 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from 'react'
+import { useSession } from 'next-auth/react';
+import { redirect } from 'next/navigation';
 
 
 
@@ -26,6 +28,10 @@ function Signup2() {
 
     const [success, setSuccess] = useState(false);
     const [error, setError] = useState(false);
+
+    const { data:session } = useSession();
+    if (session) redirect('/homepage');
+
 
     useEffect(() => {
         const result = validate_username.test(username);
@@ -82,7 +88,7 @@ function Signup2() {
 
         if (validName || validPwd || matchPwd) {
             try {
-                const res = await fetch("http://localhost:3001/signup", {
+                const res = await fetch("https://database-final-project-7q1q.onrender.com/signup", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json"
@@ -92,7 +98,7 @@ function Signup2() {
                         password: password
                     })
                 })
-    
+                
                 if (res.ok) {
                     console.log('Registration successful');
                     setSuccess(true);

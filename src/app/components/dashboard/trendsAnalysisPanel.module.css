@@ -1,0 +1,57 @@
+/* Main container styling */
+.mainWrap {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+.header {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4a4a4a;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Sub-container for each chart section */
+.container {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Bar chart container */
+.barWrap {
+    margin-top: 20px;
+}
+
+/* Back button styling */
+.backButton {
+    margin: 10px 0;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    background-color: #4a4a4a;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.backButton:hover {
+    background-color: #3b3b3b;
+}
+
+/* Monthly data heading */
+.header {
+    font-size: 20px;
+    font-weight: 600;
+    color: #4a4a4a;
+    text-align: center;
+    margin-bottom: 10px;
+}

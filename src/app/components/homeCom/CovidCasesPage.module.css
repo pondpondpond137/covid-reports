@@ -1,0 +1,57 @@
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.table th, .table td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #f4f4f4;
+}
+
+.editButton, .deleteButton {
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.editButton {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+.deleteButton {
+    background-color: #f44336;
+    color: white;
+    border: none;
+}
+
+.loadMoreContainer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.loadMoreButton {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.header {
+    text-align: center;
+}

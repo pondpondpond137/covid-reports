@@ -1,0 +1,23 @@
+/* Home.module.css */
+.container {
+    background-color: #f0f0f0; /* Light background for contrast */
+    color: #333; /* Dark text for readability */
+    min-height: 100vh; /* Ensure the container takes full height */
+    padding: 20px;
+}
+
+.header {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #5b3f8d; /* Dark purple text for header */
+}
+
+.greeting {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #7a7a7a; /* Gray color for a softer look */
+}

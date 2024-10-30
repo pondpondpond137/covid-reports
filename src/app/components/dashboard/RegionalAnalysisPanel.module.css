@@ -1,0 +1,86 @@
+.dateInput {
+    padding: 10px;
+    border: 1px solid #ccc; /* Light border for default look */
+    border-radius: 4px; /* Rounded corners for date input */
+    margin-right: 10px; /* Space between inputs */
+    background-color: #f8f9fa; /* Light background color */
+    min-width: 150px; /* Minimum width to prevent shrinkage */
+    cursor: pointer; /* Pointer cursor for better UX */
+    color: #570080; /* Dark purple text color */
+}
+
+.dateInput:hover {
+    border-color: #570080; /* Dark purple border on hover */
+    background-color: #eae6f5; /* Subtle background color change */
+}
+
+.dateInput:focus {
+    border-color: #570080; /* Dark purple border on focus */
+    box-shadow: 0 0 5px rgba(87, 0, 128, 0.5); /* Shadow for focused state */
+    outline: none; /* Remove default outline */
+}
+
+.dateInput::-webkit-calendar-picker-indicator {
+    color: #570080; /* Dark purple color for calendar icon */
+    cursor: pointer; /* Cursor change for calendar icon */
+}
+
+.selectedInput {
+    padding: 10px;
+    border: 1px solid #ccc; /* Light border for default look */
+    border-radius: 4px; /* Rounded corners for date input */
+    margin-right: 10px; /* Space between inputs */
+    background-color: #f8f9fa; /* Light background color */
+    min-width: 150px; /* Minimum width to prevent shrinkage */
+    cursor: pointer; /* Pointer cursor for better UX */
+    color: #570080; /* Dark purple text color */
+}
+.selectedInput:hover {
+    border-color: #570080; /* Dark purple border on hover */
+    background-color: #eae6f5; /* Subtle background color change */
+}
+
+.nameInput {
+    padding: 10px;
+    border: 1px solid #ccc; /* Light border for default look */
+    border-radius: 4px; /* Rounded corners for date input */
+    margin-right: 10px; /* Space between inputs */
+    background-color: #f8f9fa; /* Light background color */
+    min-width: 150px; /* Minimum width to prevent shrinkage */
+    cursor: pointer; /* Pointer cursor for better UX */
+    color: #570080; /* Dark purple text color */
+}
+
+.nameInput:hover {
+    border-color: #570080; /* Dark purple border on hover */
+    background-color: #eae6f5; /* Subtle background color change */
+}
+
+.nameInput:focus {
+    border-color: #570080; /* Dark purple border on focus */
+    box-shadow: 0 0 5px rgba(87, 0, 128, 0.5); /* Shadow for focused state */
+    outline: none; /* Remove default outline */
+}
+
+.container {
+    display: flex;
+    background-color: white;
+    border-top-right-radius: 8px;
+    padding: 10px 0px;
+}
+
+.btnFilter {
+    padding: 0px 30px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.btnFilter:hover {
+    border-color: #570080; /* Dark purple border on hover */
+    background-color: #eae6f5; /* Subtle background color change */
+}
+
+.header {
+    margin-bottom: 15px;
+}

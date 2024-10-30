@@ -1,0 +1,91 @@
+.main {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox for layout */
+    justify-content: flex-start; /* Align to the start (left) */
+    align-items: flex-start; /* Align to the start (top) */
+    background-color: white;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+.container {
+    min-height: 200px;
+    background-color: #f8f9fa; /* Light background for contrast */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+    gap: 20px; /* Space between items */
+    padding: 20px; /* Padding around the container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.items_panel {
+    background-color: #1c0028; /* Light green background */
+    color: white;
+    padding: 15px; /* Padding inside panels */
+    border: 1px solid #ccc; /* Light border for panels */
+    border-radius: 8px; /* Rounded corners for panels */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align items */
+    text-align: center; /* Center text */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.items_panel:hover {
+    background-color: #570080; /* Darker green on hover */
+}
+
+.header {
+    margin: 0 0 10px; /* Margin for headings */
+    font-size: 1.2em; /* Slightly larger font for headings */
+    color: white; /* Darker green for headings */
+}
+
+.context {
+    margin: 5px 0; /* Spacing between paragraphs */
+    font-size: 0.8em; /* Font size for text */
+    color: white; /* Dark text color */
+}
+
+.uploadSection {
+    flex-grow: 1;
+    margin-top: 20px;
+    padding: 15px;
+    border: 2px dashed #4CAF50; /* Green dashed border */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light gray background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 100%;
+}
+
+.uploadHeader {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333; /* Dark text color */
+}
+
+.uploadInput {
+    margin: 10px 0;
+}
+
+.uploadInput input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Slightly rounded corners */
+    width: 100%; /* Full width */
+    background-color: #fff; /* White background */
+}
+
+.parsedData {
+    margin-top: 15px;
+    background-color: #e0f7fa; /* Light blue background */
+    padding: 10px;
+    border-radius: 4px; /* Rounded corners */
+    font-family: monospace; /* Mon */
+}
+
+.compareLast {
+    width: 100%; height: 50%;
+}

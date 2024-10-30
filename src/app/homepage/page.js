@@ -1,39 +1,28 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
+import { useSession } from 'next-auth/react';
+import { useRouter } from 'next/navigation';
+import CovidCasesPage from '../components/homeCom/CovidCasesPage';
+import styles from './Home.module.css'; // Import the new CSS module
 
 export default function Home() {
-    const [states, setStates] = useState(null);
-    
-    async function getState() {
-        try {
-            const result = await fetch('https://database-final-project-7q1q.onrender.com/getState');
-            const data = await result.json();
-            setStates(data);
-            console.log(states);
-        } catch (err) {
-            console.error('Error fetching data: ', err);
-        }
-    }
-    
-    useEffect(() => {
-        getState();
-    }, [])
+    const { data: session } = useSession();
+    const router = useRouter();
 
+    useEffect(() => {
+        if (!session) {
+            router.push('/login'); // Redirect to the homepage if session does not exist
+        }
+    }, [session, router]);
 
     return (
-        <>
+        <div className={styles.container}> {/* Use the new container style */}
+            <h3 className={styles.header}>Home</h3> {/* Updated header style */}
             <div>
-                {states ? states.map((state, index) => (
-                        <div key={index}>
-                            <span key={state.fips_state}>{state.fips_state}</span>
-                            <span key={state.name_state}>{state.name_state}</span>
-                            <br key={index+1}></br>
-                        </div>
-                )
-                ) : <></>}
-                <button onClick={getState}>Test</button>
+                {session && <div className={styles.greeting}>Hello {session.user?.name}</div>} {/* Greeting style */}
+                <CovidCasesPage />
             </div>
-        </>
-    )
+        </div>
+    );
 }
